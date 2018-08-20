@@ -36,3 +36,11 @@ function roll2Dice() {
   result.push(Math.floor(Math.random() * 6) + 1)
   return result
 }
+
+function avgArray(array) {
+  var average = 0
+  for (var i = 0; i < array.length; i++) {
+    average += array[i]
+  }
+  return (average / array.length)
+}
