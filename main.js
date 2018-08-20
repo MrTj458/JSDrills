@@ -68,3 +68,11 @@ function factorial(num) {
     return num * factorial(num - 1)
   }
 }
+
+function fibbonacci(num) {
+  if (num < 2) {
+    return num
+  } else {
+    return fibbonacci(num - 1) + fibbonacci(num - 2)
+  }
+}
