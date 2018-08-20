@@ -76,3 +76,38 @@ function fibbonacci(num) {
     return fibbonacci(num - 1) + fibbonacci(num - 2)
   }
 }
+ // It kindof works. It does add up, but not 100% correctly written.
+function toRoman(num) {
+  var result = ''
+  while (num - 1000 >= 0) {
+    result += 'M'
+    num -= 1000
+  }
+  while (num - 500 >= 0) {
+    result += 'D'
+    num -= 500
+  }
+  while (num - 100 >= 0) {
+    result += "C"
+    num -= 100
+  }
+  while (num - 50 >= 0) {
+    result += 'L'
+    num -= 50
+  }
+  while (num - 10 >= 0) {
+    result += 'X'
+    num -= 10
+  }
+  while (num - 5 >= 0) {
+    result += 'V'
+    num -= 5
+  }
+  if (num < 5 && num > 0) {
+    for (var i = 0; i < num + 2; i++) {
+      result += 'l'
+      num -= 1
+    }
+  }
+  return result
+}
