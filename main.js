@@ -29,3 +29,10 @@ function vowelCount(input) {
 
   return totalVowels
 }
+
+function roll2Dice() {
+  var result = []
+  result.push(Math.floor(Math.random() * 6) + 1)
+  result.push(Math.floor(Math.random() * 6) + 1)
+  return result
+}
